@@ -1,0 +1,232 @@
+*{font-family: 'Chivo Mono', monospace;
+    font-weight: bolder;}
+img{
+    object-fit: cover;
+}
+main img{
+    border-radius: 50px;
+}
+header div{
+    margin-top: 20px;
+    float: right;
+}
+a{
+    text-decoration: none;
+}
+.orchids-link{
+    color: whitesmoke;
+}
+
+.logo {
+    width: 10%;
+    margin: 10px;
+    border-radius: 20px;
+    background-origin: padding-box;
+}
+.menu {
+    float: right;
+    text-align: center;
+}
+.content {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    object-position: 850px;
+}
+a{
+    list-style: none;
+    margin-left: 20px;
+    margin-left: 20px;
+}
+body{
+    background-color: white;
+}
+p.txt {
+    font-size: xx-large;   
+}
+footer{
+    background-color: #191983;
+    text-align: center;
+    color: aliceblue;
+    padding: 25px 0;
+    margin-top:20px ;
+}
+nav{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    position: absolute;
+    background: linear-gradient(to right,#00214C, 25%, red 100%);
+    bottom: -6px;
+    height: 3px;
+    width: 3px;
+    content: '';
+    right: 0;
+    left: 0;
+    transition: width .6s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+#about-main{
+    padding: 100px;
+
+}
+#about-col1{
+    float: left;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+#about-col2{
+    padding-left: 20px;
+    margin-left: 20px;
+    word-wrap: break-word;
+}
+#center-heading{
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    transform: translateX(50%);
+}
+
+#about-section{
+    margin-top: 20px;
+}
+
+/* Portfolio */
+#portfolio-main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+.Projects{
+    padding: 2.5%;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: max-content max-content max-content;
+    grid-template-areas:". item1 item2 item3 ."
+                        "     item4 item5     ";
+}
+
+.title{
+    transform: translateX(-15%);
+    padding-left: 50%;
+    display: list-item;
+    align-self: center;
+    text-align: center;
+}
+.project{
+    margin: 10px;
+    border: 1px solid black;
+    align-items: center;
+} 
+.work-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.work img{
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+.layer{
+   width: 0;
+   height: 100%;
+   background: linear-gradient(to right, rgba(0,0,0,0.6), 50%,#00214C 100%);
+   border-radius: 10px;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   padding: 0 40px;
+   text-align: center;
+   font-size: 14px;
+   transition: width 0.5s;
+   display: none;
+}
+.layer h3{
+   font-weight: 700;
+   margin-bottom: 20px;
+   color: #C4D5EC;
+}
+.layer p{
+   color: #C4D5EC;
+}
+.layer a{
+   margin-top: 60px;
+   color: #00214C;
+   text-decoration: none;
+   font-size: 18px;
+   line-height: 60px;
+   background: #fff;
+   width: 60px;
+   height: 60px;
+   border-radius: 50%;
+   text-align: center;
+}
+.work:hover img{
+   transform: scale(1.1);
+}
+.work:hover .layer{
+   display: flex;
+   width: 100%;
+}
+i.fa-solid{
+    margin: 10px;
+}
+i{
+    font-size: larger;
+}
+#contactForm{
+    padding: 10px;
+    margin: 10px;
+}
+input::placeholder{
+    
+}
+/*.btn{
+   display: block;
+   margin: 50px auto;
+   width: fit-content;
+   border: 1px solid #00214C;
+   padding: 10px 20px;
+   margin-left: 5px;
+   margin-top: 25px;
+   border-radius: 6px;
+   text-decoration: none;
+   color: #00214C;
+   transition: background 0.5s;
+}
+.btn:hover{
+   background: #00214C;
+   color: #C4D5EC;
+}*/
