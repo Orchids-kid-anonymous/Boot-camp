@@ -106,7 +106,12 @@ nav ul li a:hover::after{
 #about-section{
     margin-top: 20px;
 }
-
+.tab-contents{
+    display: none;
+}
+.tab-contents.active{
+    display: block;
+}
 /* Portfolio */
 #portfolio-main{
     display: flex;
