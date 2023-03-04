@@ -116,7 +116,11 @@ nav ul li a:hover::after{
     cursor: pointer;
     position: relative;
     justify-content: space-around;
+}
+.tab-links{
     display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 .tab-link::after{
     background: linear-gradient(to right,black 20%, blue 100%);
