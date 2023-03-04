@@ -112,6 +112,25 @@ nav ul li a:hover::after{
 .tab-contents.active{
     display: block;
 }
+.tab-link{
+    cursor: pointer;
+    position: relative;
+    justify-content: space-around;
+    display: flex;
+}
+.tab-link::after{
+    background: linear-gradient(to right,black 20%, blue 100%);
+    height: 3px;
+    width: 0;
+    transiton: width .6s;
+    positon: absolute;
+    bottom: -6px;
+    content: '';
+}
+.tab-link.active::after{
+    width: 100%;
+}
+
 /* Portfolio */
 #portfolio-main{
     display: flex;
