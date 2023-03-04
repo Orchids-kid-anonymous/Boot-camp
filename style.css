@@ -118,7 +118,9 @@ nav ul li a:hover::after{
     display: none;
 }
 .tab-contents.active{
-    display: block;
+    display: flex;
+    maargin: 20px;
+    padding: 1px;
 }
 .tab-link{
     cursor: pointer;
