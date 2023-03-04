@@ -62,6 +62,19 @@
         </section>
     </main>
     <footer><p>Copyright &copy;. Made with by Nathan with the help <i class="fa-solid fa-heart"></i> of <a href="https://www.orchidsinternationalschool.com/bangalore-branches/?utm_source=google&utm_medium=search&utm_campaign=Orchids_Bangalore_Brand_2023-24&utm_term=orchids%20international%20school&utm_content=394936581244&utm_adgroup=Orchids_Bangalore&utm_extension=&utm_position=&utm_network=g&utm_experiment=&utm_placement=&gclid=Cj0KCQiA4aacBhCUARIsAI55maHPjVD1BcyURU4hdnMukVht9nCf6zyZEHGYh2diLIN_BmRzlnKnXVEaAsUDEALw_wcB&gclid=Cj0KCQiA4aacBhCUARIsAI55maHPjVD1BcyURU4hdnMukVht9nCf6zyZEHGYh2diLIN_BmRzlnKnXVEaAsUDEALw_wcB" class="orchids-link">ORCHIDS The International School</a></p></footer>
-
+    <script>
+        var tablinks = document.getElementsByClassName("tab-link");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active");
+            }
+            event.currentTarget.classList.add("active")
+            document.getElementById(tabname).classList.add("active");
+        }
+    </script>
 </body>
 </html>
