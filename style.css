@@ -2,7 +2,7 @@
 *{font-family: 'Chivo Mono', monospace;
     font-weight: bolder;}
 header{
-    z-index: 9999;
+    z-index: 999;
     position: sticky;
     top: 0;
 }
