@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@1,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Contact</title>
+    
+</head>
+<body>
+    <header>
+        <a href="https://github.com/saatvikportfolio/saatvik.github.io"><img src="images/logo.png" alt="logo" class="logo"></a>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About me</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <main id="contact">
+        <h1 class="sub-title">Contact Me</h1>
+        <div class="contact-row-1">
+            <div class="contact-left">
+                <div class="email means-of-contact">
+                    <i class="contact-me-icon fa-solid fa-envelope">Example@contact.gmail.com</i>
+                    <p class="no-account">Note: Owner/Creator does not have a Mail id.</p>
+                </div>
+                <div class="phone means-of-contact">
+                    <i class="contact-me-icon fa-solid fa-phone">+1234567890</i>
+                    <p class="no-account">Note: Owner/Creator does not have a Phone no.</p>
+                </div>
+            </div>
+            <div class="no-account">
+                Note: The creator does not have an account in any of the following Social media apps.
+            </div>
+            <div class="contact-right" id="social-icons">
+                <a target="_blank" href="https://www.facebook.com/LinkedIn">Facebook<i class="fa-brands fa-facebook"></i></a>
+                <a target="_blank" href="http://www.twitter.com/">Twitter<i class="fa-brands fa-square-twitter"></i></a>
+                <a target="_blank" href="https://www.instagram.com/">Instagram<i class="fa-brands fa-square-instagram"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/">linkedin<i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="contact-row-2">
+            <div class="col-2" id="Comments-section">
+                <form id="contactForm">
+                        <h2 class="caption">Please fill out these details</h2>
+                        <input type="text" placeholder="Your name" name="name" required><br><br>
+                        <input type="email" placeholder="Your email" name="email" required><br><br>
+                        <textarea name="Comments" id="comments" cols="66" rows="3" placeholder="Your message"></textarea><br><br>
+                        <button type="submit" class="submit btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <br>
+    <footer><p>Copyright &copy;. Made with by Nathan with the help <i class="fa-solid fa-heart"></i> of <a href="https://www.orchidsinternationalschool.com/bangalore-branches/?utm_source=google&utm_medium=search&utm_campaign=Orchids_Bangalore_Brand_2023-24&utm_term=orchids%20international%20school&utm_content=394936581244&utm_adgroup=Orchids_Bangalore&utm_extension=&utm_position=&utm_network=g&utm_experiment=&utm_placement=&gclid=Cj0KCQiA4aacBhCUARIsAI55maHPjVD1BcyURU4hdnMukVht9nCf6zyZEHGYh2diLIN_BmRzlnKnXVEaAsUDEALw_wcB&gclid=Cj0KCQiA4aacBhCUARIsAI55maHPjVD1BcyURU4hdnMukVht9nCf6zyZEHGYh2diLIN_BmRzlnKnXVEaAsUDEALw_wcB" class="orchids-link">ORCHIDS The International School</a></p></footer>
+    <script src="functionality.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+        <script>
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            var firebaseConfig = {
+            apiKey: "AIzaSyB0tzdGyoXfQhjkund4NW5zE0iVFZzDEfk",
+            authDomain: "learning-firebase-storage-13db.firebaseapp.com",
+            databaseURL: "https://learning-firebase-storage-13db-default-rtdb.firebaseio.com",
+            projectId: "learning-firebase-storage-13db",
+            storageBucket: "learning-firebase-storage-13db.appspot.com",
+            messagingSenderId: "44828577492",
+            appId: "1:44828577492:web:ff23d0156845e9b9047541",
+            measurementId: "G-RFLGVF9T8P"
+            };
+        firebase.initializeApp(firebaseConfig);
+        </script>
+</body>
+</html>
