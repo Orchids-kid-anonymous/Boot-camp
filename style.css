@@ -362,3 +362,9 @@ div[class*="contact-row-"]{
 .no-account{
     font-size: x-small;
 }
+.social-media{
+    display: flex;
+    align-items: center;
+    text-align: center
+}
+
