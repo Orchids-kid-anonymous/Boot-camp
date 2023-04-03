@@ -178,7 +178,11 @@ i.fa-solid.fa-heart{
     display: grid;
     justify-content: space-around;
     grid-template-columns: auto auto auto;
-
+}
+@media screen and (max-width: 600px){
+    .Projects{
+        grid-template-columns: auto;
+    }
 }
 .container{
     display: flex;
